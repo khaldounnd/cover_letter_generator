@@ -17,13 +17,14 @@ def generate_generic():
                ' a eleifend nisl commodo a. Vivamus finibus neque sed semper placerat. Fusce accumsan urna et tellus facilisis, ' \
                'nec commodo ex congue. Proin ullamcorper tellus sollicitudin, finibus eros id, lobortis est. Morbi ' \
                'egestas nulla eu nulla viverra tristique.\n\nSincerely,\n'
-    messagebox.showinfo('info', template)
     generate_pdf(template)
+    messagebox.showinfo('info', 'PDF Generated')
 
 
 def generate_personal():
     generate_text = text_input.get('1.0', END)
     generate_pdf(generate_text)
+    messagebox.showinfo('info', 'PDF Generated')
 
 
 def use_template():
